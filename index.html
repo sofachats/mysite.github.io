@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>Моя домашняя страница</title>
+	</head>
+	<body
+		text="000000"
+		bgcolor="#f5cfdc"
+		link="#a25872"
+		vlink="#a25872"
+		alink="#000088"
+		font-size="30px"
+	>
+		<center>
+			<h1 style="color: #fd7daa">Приветствую на моей домашней странице!</h1>
+		</center>
+		<center style="font-size: 18px; background-color: #e7bfcd; color: #fff">
+			<a href="/" style="color: #000000">Главная</a> |
+			<a href="/advertising-theory.html">Теория рекламы</a> |
+			<a href="/travel-guide.html">Путеводитель для города Москвы</a>
+		</center>
+		<center>
+			<h2>
+				Меня зовут
+				<b><i style="color: #fd7daa">София</i></b>
+			</h2>
+		</center>
+		<p>
+			<center style="font-size: 20px">
+				Я люблю
+				<b>компьютерные игры, свечи, кровать и музыку в стиле K-Pop.</b>
+				Терпеть не могу
+				<b>злых продавщиц и мяуканье своей кошки.</b>
+			</center>
+		</p>
+		<p>
+			<center style="font-size: 20px">
+				Для тех, кто еще не знает, как я выгляжу - моя фотография:
+			</center>
+		</p>
+		<p>
+			<center>
+				<img src="1.jpg" />
+			</center>
+		</p>
+		<img
+			src="чонгук.png"
+			height="800"
+			style="position: fixed; bottom: 0; right: 0"
+		/>
+		<img
+			src="свеча.png"
+			height="300"
+			style="position: absolute; bottom: 40%; left: 5%"
+		/>
+		<img
+			src="cat.gif"
+			height="300"
+			style="position: absolute; bottom: 0; left: 7%"
+		/>
+		<hr />
+		<p>
+			<center style="font-size: 20px">
+				<p>Текущее время: <span id="time"></span>.</p>
+			</center>
+		</p>
+		<p>
+			<center>
+				Можете попробовать поискать информацию обо мне на
+				<a href="https://www.ya.ru">Яндексе</a>
+			</center>
+		</p>
+		<center>
+			и напишите мне письмо на
+			<a href="mailto:sofa.chatsuka@mail.ru">sofa.chatsuka@mail.ru</a>, что у
+			вас вышло
+		</center>
+	</body>
+	<script>
+		function timer() {
+			var time = new Date();
+			var hours = time.getHours();
+			var minutes = time.getMinutes();
+			var sec = time.getSeconds();
+			if (hours < 10) {
+				hours = '0' + hours;
+			}
+			if (minutes < 10) {
+				minutes = '0' + minutes;
+			}
+			if (sec < 10) {
+				sec = '0' + sec;
+			}
+			document.getElementById('time').innerHTML =
+				hours + ':' + minutes + ':' + sec;
+			setTimeout(timer, 1000);
+		}
+		timer();
+	</script>
+</html>
