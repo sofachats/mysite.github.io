@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<title>Моя домашняя страница</title>
+	</head>
+	<body
+		text="000000"
+		bgcolor="#f5cfdc"
+		link="#a25872"
+		vlink="#a25872"
+		alink="#000088"
+		font-size="30px"
+	>
+		<center>
+			<h1 style="color: #fd7daa">Приветствую на моей домашней странице!</h1>
+		</center>
+		<center style="font-size: 18px; background-color: #e7bfcd; color: #fff">
+			<a href="/">Главная</a> |
+			<a href="/advertising-theory.html" style="color: #000000">
+				Теория рекламы
+			</a>
+			|
+			<a href="/travel-guide.html">Путеводитель для города Москвы</a>
+		</center>
+		<center>
+			<h2>Теория рекламы</h2>
+			<h3>Обзор ресурсов интернет</h3>
+		</center>
+		<div style="font-size: 18px; margin: auto; width: 50%">
+			<p>
+				Реклама — особый вид коммуникационной деятельности людей, который имеет
+				экономическую основу и сопровождает человечество на протяжении всей
+				истории его развития.
+			</p>
+			<p>
+				Несмотря на то, что сфера рекламы признается достаточно узкой, она
+				играет ключевую роль в развитии рыночной экономики и является ее важным
+				элементом, и, в целом, оказывает заметное влияние на характер
+				общественных отношений. В настоящее время реклама стала настолько
+				очевидным явлением в общественной жизни, что ее влияние на разнообразные
+				сферы функционирования социума заставляет общество внимательно
+				анализировать и оценивать этот феномен с точки зрения экономических и
+				социальных результатов рекламного воздействия.
+			</p>
+			<p>
+				В интернете по данной теме можно ознакомиться с функциями, видами
+				рекламы и различными средствами рекламы.
+			</p>
+			<ol>
+				<li>
+					<a href="https://dic.academic.ru/dic.nsf/enc3p/253750">
+						Определение рекламы
+					</a>
+				</li>
+				<li>
+					Функции рекламы:
+					<ol>
+						<li>
+							<a
+								href="https://spravochnick.ru/reklama_i_pr/ekonomicheskaya_funkciya_reklamy/"
+							>
+								Экономическая функция рекламы
+							</a>
+						</li>
+						<li>
+							<a href="https://psyfactor.org/recl6.htm">
+								Социальная функция рекламы
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://spravochnikvs.com/marketingovaya_funkciya_reklamy"
+							>
+								Маркетинговая функция рекламы
+							</a>
+						</li>
+						<li>Коммуникационная функция рекламы</li>
+					</ol>
+				</li>
+				<li>
+					Виды рекламы:
+					<ol>
+						<li>
+							<a
+								href="https://finzav.net/marketing/kommercheskaya-reklama-eto-chto"
+							>
+								Коммерческая реклама
+							</a>
+							<ol>
+								<li>
+									<a href="https://www.directline.pro/blog/tovarnaya-reklama/">
+										Товарная реклама
+									</a>
+								</li>
+								<li>
+									<a href="https://adindustry.ru/doc/1126">
+										Нетоварная реклама
+									</a>
+								</li>
+							</ol>
+						</li>
+						<li>
+							<a
+								href="https://studref.com/560294/zhurnalistika/nekommercheskaya_reklama"
+							>
+								Некоммерческая реклама
+							</a>
+							<ol>
+								<li>
+									<a href="https://ru.wikipedia.org/wiki/Политическая_реклама">
+										Политическая реклама
+									</a>
+								</li>
+								<li>
+									<a href="https://ru.wikipedia.org/wiki/Социальная_реклама">
+										Социальная реклама
+									</a>
+								</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="https://www.reklama-expo.ru/ru/ui/17161/">
+						Различные средства рекламы
+					</a>
+				</li>
+			</ol>
+		</div>
+		<img
+			src="чонгук.png"
+			height="800"
+			style="position: fixed; bottom: 0; right: 0"
+		/>
+		<hr />
+		<p>
+			<center style="font-size: 20px">
+				<p>Текущее время: <span id="time"></span>.</p>
+			</center>
+		</p>
+		<p>
+			<center>
+				Можете попробовать поискать информацию обо мне на
+				<a href="https://www.ya.ru">Яндексе</a>
+			</center>
+		</p>
+		<center>
+			и напишите мне письмо на
+			<a href="mailto:sofa.chatsuka@mail.ru">sofa.chatsuka@mail.ru</a>, что у
+			вас вышло
+		</center>
+	</body>
+	<script>
+		function timer() {
+			var time = new Date();
+			var hours = time.getHours();
+			var minutes = time.getMinutes();
+			var sec = time.getSeconds();
+			if (hours < 10) {
+				hours = '0' + hours;
+			}
+			if (minutes < 10) {
+				minutes = '0' + minutes;
+			}
+			if (sec < 10) {
+				sec = '0' + sec;
+			}
+			document.getElementById('time').innerHTML =
+				hours + ':' + minutes + ':' + sec;
+			setTimeout(timer, 1000);
+		}
+		timer();
+	</script>
+</html>
